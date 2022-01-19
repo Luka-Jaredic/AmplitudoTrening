@@ -5,6 +5,7 @@
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -325,12 +326,14 @@ body{
     margin: 0px auto;
     margin-top: 12.234741784vh;
 }
+/*PC screen*/
 @media only screen and (max-width: 1700px) {
     .hello-container , .location-point {
         transform: translateY(-20px);
     }
 }
 
+/*PC screen, Nest Hub Max*/
 @media only screen and (max-width: 1400px) {
     :root {
         font-size: 8px;
@@ -348,14 +351,15 @@ body{
     }
   }
 
+/*PC screen, Nest Hub*/
 @media only screen and (max-width: 1200px) {
     .hello-container , .location-point {
         transform: translateY(-35px);
     }
 }
 
-
-/*Tablet Ipad Air*/
+/*Tablet Ipad Air,Galaxy fold, Sams Galaxy S8+, iphone 12, iphone SE, iphone XR,
+ pixel 5, Galaxy s20 Ultra,Surface Duo, Galaxy A51, Ipad Mini, Surface Pro 7*/
 @media only screen and (max-width: 1000px) {
 
     :root{
@@ -449,7 +453,7 @@ body{
     }
 }
 
-/*Phone (iphone 12)*/
+/*Galaxy fold, Sams Galaxy S8+, iphone 12, iphone SE, iphone XR, pixel 5, Galaxy s20 Ultra,Surface Duo, Galaxy A51*/
 @media only screen and (max-width:600px){
     :root{
         font-style: 7px;
@@ -584,6 +588,7 @@ body{
     }
 }
 
+/*Galaxy fold, Sams Galaxy S8+, iphone SE*/
 @media only screen and (max-width:380px){
     :root{
         font-size: 7px;
@@ -595,6 +600,7 @@ body{
     
 }
 
+/*Galaxy fold*/
 @media only screen and (max-width:280px){
     .second_screen_title {
         font-size: 4rem; 
@@ -603,6 +609,8 @@ body{
         text-align: center;
     }
 }
+
+/*Nested Hub, Galaxy Fold, Surface Duo*/
 @media only screen and (max-height:750px) {
     .nav_bar{
         height: fit-content;
@@ -616,8 +624,16 @@ body{
         padding-top: 0px;;
         margin-top: 9vh;
     }
+
+    .contatct_us_drawing{
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: 7vh;
+    }
 }
 
+/*Nested Hub*/
 @media only screen and (max-height:600px) {
     .third_section , .second_screen, .world{
         height: fit-content;
@@ -627,5 +643,9 @@ body{
     }
     .third_section{
         padding-bottom:5vh;
+    }
+
+    .contatct_us_drawing{
+        width: 40vw;
     }
 }
