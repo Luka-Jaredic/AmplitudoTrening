@@ -470,4 +470,7 @@ body{
     .licence{
         padding-bottom: 20px;
     }
+    .extra-padded{
+        margin-top: 6.234741784vh;
+    }
 }
