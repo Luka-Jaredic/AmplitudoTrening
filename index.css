@@ -62,7 +62,7 @@ body{
 
 .language {
     margin-left: 7.03125vw;
-    width: 2.083333333vw;
+    width: 3.755868544vh;
     height: 3.755868544vh;
     background: transparent;
     border: 1px solid #FFFFFF;
@@ -228,6 +228,8 @@ body{
     height: 115vh;
     width: 100vw;
     padding-top: 4.600938967vh;
+    background-size: contain;
+
 
 
 }
@@ -259,6 +261,8 @@ body{
     background-size: auto;
     margin-top: 7.230046948vh;
     margin-left: 15.677083333vw;
+    background-size: contain;
+
 }
 
 .hello-container {
@@ -320,4 +324,150 @@ body{
     color: white;
     margin: 0px auto;
     margin-top: 12.234741784vh;
+}
+@media only screen and (max-width: 1700px) {
+    .hello-container , .location-point {
+        transform: translateY(-20px);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    :root {
+        font-size: 8px;
+    }
+
+    .routes{
+        margin-left: 28.902083333vw;
+    }
+
+    .upload_cv {
+        flex-direction: column-reverse;
+    }
+    .hello-container , .location-point {
+        transform: translateY(-30px);
+    }
+  }
+
+@media only screen and (max-width: 1200px) {
+    .hello-container , .location-point {
+        transform: translateY(-35px);
+    }
+}
+
+@media only screen and (max-width:450px){
+    :root{
+        font-style: 7px;
+    }
+    .nav_bar {
+        margin: 0px;
+        padding: 30px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 50vh;
+    }
+    .logo {
+        margin: 0px auto;
+        height: fit-content;
+        width: fit-content;
+    }
+    .routes {
+        margin: 0px;
+        font-size: 3rem;
+    }
+    .routes > a{
+        display: block;
+        margin: 15px;
+    }
+    .language {
+        margin: 0px;
+        font-size: 3rem;
+        display: none;
+    }
+    .first_screen{
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+    .textFirstScreen{
+        height: fit-content;
+        margin: 0px 10vw 0px;
+    }
+    .lorem {
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;
+        width: 80vw;
+        text-align: end;     
+    }
+
+    .second_screen{
+        height: fit-content;
+    }
+
+    .grid_container{
+        grid-template-columns: auto;
+    }
+    .position_card{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10%;
+    }
+    .upload_cv_text{
+        font-size:3rem;
+    }
+
+    .third_section{
+        height: fit-content;
+        background-size: cover;
+    }
+    .world{
+        height: fit-content;
+    }
+    .contatct_us_drawing {
+        margin: 3.7vh auto;
+        /* margin-left: 41.322916666vw; */
+        /* margin-top: 3.71455399vh; */
+        width: 90vw;
+        height: 6vh;
+    }
+    .hello-container{
+        width: fit-content;
+        margin: 0px;
+        padding: 0px;
+        transform: translateY(-40px) translateX(-20px);
+    }
+    .hello-img{
+        width: 80vw;
+    }
+    .adress-info{
+        margin: 10px 0px 0px;
+        text-align: center;
+    }
+    .horizontal-line{
+        width: 80%;
+    }
+    .centered{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .artificial-center{
+        margin-left: 18vw;
+    }
+
+    .social-icons{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5vw;
+
+    }
+    .licence{
+        padding-bottom: 20px;
+    }
 }
