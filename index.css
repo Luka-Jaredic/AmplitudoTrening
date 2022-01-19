@@ -356,7 +356,11 @@ body{
 
 
 /*Tablet Ipad Air*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
+
+    :root{
+        font-size: 9px;
+    }
 
     .nav_bar {
         padding-top: 4vh;
@@ -374,6 +378,13 @@ body{
 
     }
 
+    .first_screen{
+        padding-bottom: 5vh;
+    }
+
+    .textFirstScreen{
+        margin-top: 20vh;
+    }
     .routes > a {
         padding:0px;
         margin: 0px;
@@ -385,13 +396,17 @@ body{
         height: fit-content;
     }
 
+    .lorem_second_screen{
+        width: 75vw;
+    }
+
     .grid_container{
         grid-template-columns: auto auto;
     }
 
     .position_card{
         border-radius: 4%;
-        padding: 5%;
+        padding: 10%;
         justify-content: center;
         align-items: center;
 
@@ -406,6 +421,11 @@ body{
         text-align: center;
     }
 
+    .third_section{
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+
     .contatct_us_drawing{
         margin: 5vh auto;
         width: 50vw;
@@ -414,6 +434,10 @@ body{
 
     .hello-container, .location-point {
         transform: translateY(-6.5vh);
+    }
+
+    .world{
+        height: fit-content;
     }
 
     .name-with-logo{
@@ -426,7 +450,7 @@ body{
 }
 
 /*Phone (iphone 12)*/
-@media only screen and (max-width:450px){
+@media only screen and (max-width:600px){
     :root{
         font-style: 7px;
     }
@@ -525,6 +549,11 @@ body{
     .hello-img{
         width: 80vw;
     }
+
+    .name-with-logo > img {
+        max-width:100%;
+    }
+
     .adress-info{
         margin: 10px 0px 0px;
         text-align: center;
@@ -552,5 +581,51 @@ body{
     }
     .extra-padded{
         margin-top: 6.234741784vh;
+    }
+}
+
+@media only screen and (max-width:380px){
+    :root{
+        font-size: 7px;
+    }
+
+    .second_screen_title{
+        font-size: 4rem;
+    }
+    
+}
+
+@media only screen and (max-width:280px){
+    .second_screen_title {
+        font-size: 4rem; 
+    }
+    .lorem{
+        text-align: center;
+    }
+}
+@media only screen and (max-height:750px) {
+    .nav_bar{
+        height: fit-content;
+        
+    }
+    .routes{
+        margin-top: 0px;
+        padding-top: 0px;
+    } 
+    .routes > a{
+        padding-top: 0px;;
+        margin-top: 9vh;
+    }
+}
+
+@media only screen and (max-height:600px) {
+    .third_section , .second_screen, .world{
+        height: fit-content;
+    }
+    .position_card{
+        font-size: 4rem;
+    }
+    .third_section{
+        padding-bottom:5vh;
     }
 }
