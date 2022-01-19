@@ -354,6 +354,78 @@ body{
     }
 }
 
+
+/*Tablet Ipad Air*/
+@media only screen and (max-width: 900px) {
+
+    .nav_bar {
+        padding-top: 4vh;
+        margin: 0px;
+        justify-content: space-around;   
+    }
+
+    .routes{
+        display: grid;
+        margin: 0px;
+        padding-top: 15vw;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10vw;
+        grid-row-gap: 10vw;
+
+    }
+
+    .routes > a {
+        padding:0px;
+        margin: 0px;
+        font-size: 3rem;
+
+    }
+
+    .second_screen {
+        height: fit-content;
+    }
+
+    .grid_container{
+        grid-template-columns: auto auto;
+    }
+
+    .position_card{
+        border-radius: 4%;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .position_title{
+        text-align: center;
+        width: fit-content;
+    }
+    .upload_cv_text{
+        width: 40vw;
+        text-align: center;
+    }
+
+    .contatct_us_drawing{
+        margin: 5vh auto;
+        width: 50vw;
+        height: 8vh;
+    }
+
+    .hello-container, .location-point {
+        transform: translateY(-6.5vh);
+    }
+
+    .name-with-logo{
+        margin-top: 24vh;
+    }
+
+    .extra-padded{
+        margin-top: 6.234741784vh;
+    }
+}
+
+/*Phone (iphone 12)*/
 @media only screen and (max-width:450px){
     :root{
         font-style: 7px;
@@ -365,7 +437,7 @@ body{
         align-items: center;
         justify-content: space-around;
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
     }
     .logo {
         margin: 0px auto;
@@ -375,10 +447,16 @@ body{
     .routes {
         margin: 0px;
         font-size: 3rem;
+        display:block;
+        padding-bottom: 5vh;
     }
     .routes > a{
         display: block;
-        margin: 15px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        width: 70vw;
+        margin-top: 15vw;
+        text-align: center;
     }
     .language {
         margin: 0px;
@@ -409,6 +487,8 @@ body{
 
     .grid_container{
         grid-template-columns: auto;
+        justify-items: center;
+        grid-row-gap: 5vh;
     }
     .position_card{
         width: 80%;
