@@ -1,0 +1,233 @@
+
+/*GENERIC STUFF AND MODIFIERS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 30px;
+    --ff-regular:'Roboto',sans-serif;
+    --ff-important:'Open Sans', 'Roboto', sans-serif;
+    --clr-important: #283E51;
+    --clr-amplitudo: #17ac9d;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body{
+    font-family: var(--ff-regular);
+    font-weight: 300;
+}
+
+h1, h2 {
+    font-family: var(--ff-important);
+    font-weight: 400;
+}
+
+.screen-one, .screen-two, .screen-three {
+    background-size: cover;
+    padding: 5vh 5vw;
+}
+
+.white-frame{
+    padding: 1em;
+    border: 1px white solid;    
+}
+
+
+
+/*SCREEN ONE STUFF*/
+
+.screen-one{
+    background-image: url(./assets/first_section_bg/shutterstock_356285228-\(1\).png);
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar__element, .navbar__link{
+    display:block;
+    margin: 1rem auto;
+    width: fit-content;
+    color:white;
+    text-decoration: none;
+}
+
+.navbar__language{
+    background: transparent;
+    padding: 1em;
+    border: 1px white solid;
+
+}
+
+
+.intro{
+    max-width: 10rem;
+    padding-top: 2rem;
+    margin-inline: auto;
+}
+
+.intro__heading, .intro__paragraph{
+    margin-top: 1em;
+}
+
+@media only screen and (min-width: 950px){
+    :root{
+        font-size: 16px;
+    }
+
+    .navbar, .navbar__routes{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar__element, .navbar__link{
+        margin-block: 0;
+    }
+
+    .navbar__logo{
+        flex-basis: 30%;
+    }
+
+    .navbar__routes{
+        flex-basis: 100%;
+    }
+
+    .intro{
+        margin-left: 10vw;
+        margin-top: 12vh;
+        font-size: 2.5rem;
+        max-width: 10em;
+    }
+}
+
+
+/*SCREEN TWO STUFF*/
+
+.screen-two{
+    text-align: center;
+}
+
+.story-section{
+    padding: 5vh;
+}
+
+.story-section__heading{
+    padding-bottom:1em;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.available-positions-section{
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.available-positions-section__position-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px #67859E28;
+    max-height: 50vh;
+    max-width: 50vh;
+    padding:1rem;
+    margin: 1rem;
+}
+
+.available-positions-section__position-card > *{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.availible-positions__position-icon{
+    flex-basis: 50%;
+    max-height: 50%;
+    max-width: 50%;
+}
+.available-positions-section__position-heading{
+    font-size: 1.25rem;
+    flex-basis: 50%;
+}
+.apply-section__cv-button{
+    border: var(--clr-important) 0.2rem solid;
+    outline: 0.2rem solid white;
+    outline-offset: -0.2rem;
+    border-radius: 50%;
+    min-width: max(15vw, 4rem);
+    min-height: max(15vw, 4rem);
+    background: var(--clr-amplitudo);
+}
+
+@media only screen and (min-width: 950px){
+   
+    .story-section{
+        max-width: 70vw;
+        margin-inline:auto;
+        font-size: 2em;
+    }
+
+    .story-section__heading{
+        font-size: 5rem;
+    }
+
+    .available-positions-section{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        min-width: 80vw;
+        min-height: fit-content;
+    }
+
+    .available-positions-section__position-card{
+        min-height: 20vw;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .available-positions-section__position-card > *{
+        padding:10%;
+        font-weight: 600;
+        max-width: 80%;
+    }
+
+
+    .available-positions-section__position-heading{
+        font-size: 2.5rem;
+    }
+    
+    .apply-section__cv-button{
+        min-width: auto;
+        min-height: auto;
+        max-width: 8rem;
+        max-height: 8rem;
+        padding: 2.5rem;
+        border: 0.3rem solid var(--clr-important);
+    }
+    .apply-section{
+        margin-inline:auto;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .apply-section__cv-heading{
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    
+}
+
+/*SCREEN THREE STUFF*/
+
+.screen-three{
+    background-image: url(./assets/Rectangle23/Rectangle23.png);
+}
+
+
+
